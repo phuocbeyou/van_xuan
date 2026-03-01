@@ -74,7 +74,7 @@ const Contact = () => {
                 <div className="info-icon"><MapPin size={20} /></div>
                 <div>
                   <h4>Tâm Quê 369 Group</h4>
-                  <p>Đơn vị phân phối uy tín hàng đầu miền Bắc.</p>
+                  <p>Tâm Quê 369 là đơn vị phân phối uy tín.</p>
                 </div>
               </div>
             </div>
