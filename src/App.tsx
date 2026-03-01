@@ -15,7 +15,7 @@ const PRELOAD_IMAGES = [
   '/images/logo_du_an.png',
   '/images/banner.webp',
   '/images/banner_2.webp',
-  '/images/masterplan.webp',
+  // masterplan.webp is too large (20MB) to preload without blocking, let it load lazily
   '/images/vi_tri_dac_dia.webp',
   '/images/ha_tang.webp',
   '/images/logo_369_group.png'

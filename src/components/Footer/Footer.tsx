@@ -1,4 +1,5 @@
 import { Facebook, Instagram } from 'lucide-react';
+import Logo from '../Logo/Logo';
 import './Footer.css';
 
 const Footer = () => {
@@ -30,15 +31,14 @@ const Footer = () => {
             <ul>
               <li><a href="#">Chính Sách Bảo Mật</a></li>
               <li><a href="#">Quy Trình Giao Dịch</a></li>
-              <li><a href="#">Đăng ký Nhận Bảng Giá</a></li>
+              <li><a href="#contact">Đăng ký Nhận Bảng Giá</a></li>
               <li><a href="#">Tư Vấn Trực Tuyến 24/7</a></li>
             </ul>
           </div>
         </div>
 
-        <div className="footer-logos">
-          <img src="/images/logo_du_an.png" alt="Vạn Xuân Heritage" />
-          <img src="/images/logo_369_group.png" alt="Tâm Quê 369 Group" />
+        <div className="footer-brand-logo">
+          <Logo />
         </div>
 
         <div className="footer-bottom">

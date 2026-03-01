@@ -1,5 +1,6 @@
 import { useEffect, useRef, memo, useState } from 'react';
 import { Phone, Menu, X } from 'lucide-react';
+import Logo from '../Logo/Logo';
 import './Header.css';
 
 const Header = memo(() => {
@@ -49,7 +50,7 @@ const Header = memo(() => {
       <div className="container header-container">
         <div className="logo">
           <a href="/">
-            <img src="/images/logo_du_an.png" alt="Tâm Quê 369 Group" className="logo-img" />
+            <Logo />
           </a>
         </div>
 
@@ -63,7 +64,7 @@ const Header = memo(() => {
             <li><a href="#location" onClick={() => setIsMenuOpen(false)}>Vị trí</a></li>
             <li><a href="#about" onClick={() => setIsMenuOpen(false)}>Tiện ích</a></li>
             <li><a href="#masterplan" onClick={() => setIsMenuOpen(false)}>Mặt bằng</a></li>
-            <li><a href="#policy" onClick={() => setIsMenuOpen(false)}>Chính sách</a></li>
+            <li><a href="#contact" onClick={() => setIsMenuOpen(false)}>Chính sách</a></li>
           </ul>
         </nav>
 

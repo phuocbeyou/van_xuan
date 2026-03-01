@@ -12,8 +12,8 @@ const Hero = memo(() => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
-    // Preload images
-    bannerImages.forEach((src) => {
+    // Only preload the first two images to reduce initial load lag
+    bannerImages.slice(0, 2).forEach((src) => {
       const img = new Image();
       img.src = src;
     });
@@ -30,14 +30,31 @@ const Hero = memo(() => {
         <motion.div 
           className="hero-slider-inner"
           animate={{ x: `-${currentSlide * 100}%` }}
-          transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
+          transition={{ 
+            duration: 0.8, 
+            ease: [0.4, 0, 0.2, 1],
+            // Use hardware acceleration
+            type: "tween"
+          }}
+          style={{
+            transformStyle: "preserve-3d",
+            willChange: "transform"
+          }}
         >
           {bannerImages.map((img, index) => (
-            <div 
-              key={index}
-              className="hero-slide"
-              style={{ backgroundImage: `url(${img})` }}
-            />
+            <div key={index} className="hero-slide">
+              <img 
+                src={img} 
+                alt={`Banner ${index + 1}`} 
+                loading={index === 0 ? "eager" : "lazy"}
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
+                  display: 'block'
+                }}
+              />
+            </div>
           ))}
         </motion.div>
       </div>
