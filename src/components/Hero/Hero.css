@@ -116,35 +116,69 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgba(26, 54, 93, 0.9);
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 30px 5%;
+  background: rgba(26, 54, 93, 0.95);
+  padding: 24px 5%;
   z-index: 3;
+  backdrop-filter: blur(5px);
+  border-top: 1px solid rgba(197, 160, 89, 0.3);
 }
 
-.stat-item {
-  text-align: center;
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
+.stat-promo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: var(--white);
+  font-size: 1.1rem;
 }
 
-.stat-item:last-child {
-  border-right: none;
-}
-
-.stat-num {
-  display: block;
-  font-size: 2rem;
+.promo-text {
   font-family: var(--font-heading);
-  font-weight: 700;
-  color: var(--accent);
+  letter-spacing: 0.5px;
 }
 
-.stat-label {
-  font-size: 0.85rem;
+.promo-text strong {
+  color: var(--accent);
+  font-size: 1.3rem;
+  margin-left: 5px;
+}
+
+.promo-divider {
+  opacity: 0.3;
+  font-weight: 300;
+}
+
+.promo-sub {
+  opacity: 0.8;
+  font-size: 0.95rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  opacity: 0.8;
+}
+
+/* ---- MOBILE STYLES ---- */
+@media (max-width: 768px) {
+  .hero-stats {
+    position: relative;
+    padding: 15px;
+  }
+  .stat-promo {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  .promo-text strong {
+    font-size: 1.1rem;
+    display: block;
+    margin-top: 2px;
+  }
+  .promo-divider {
+    display: none;
+  }
+  .promo-sub {
+    font-size: 0.75rem;
+    opacity: 0.7;
+  }
 }
 
 /* ---- MOBILE ---- */
@@ -215,29 +249,5 @@
     padding: 12px 10px;
     font-size: 0.75rem;
     letter-spacing: 0.5px;
-  }
-
-  /* Stats row */
-  .hero-stats {
-    position: relative;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 18px 15px;
-    gap: 0;
-    background: rgba(26, 54, 93, 1);
-  }
-
-  .stat-num {
-    font-size: 1.1rem;
-  }
-
-  .stat-label {
-    font-size: 0.55rem;
-    letter-spacing: 0.3px;
-    line-height: 1.3;
-  }
-
-  .stat-item {
-    border-bottom: none;
-    padding: 0 5px;
   }
 }

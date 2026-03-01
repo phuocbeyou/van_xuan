@@ -7,26 +7,27 @@ const properties = [
   {
     id: 1,
     image: '/images/ha_tang.webp',
-    title: 'Hạ Tầng Đồng Bộ',
-    type: 'Tổng Quan',
-    size: '12.5 ha',
+    title: 'Hệ thống tiện ích nội khu',
+    description: 'Trạm Y tế, Trường mầm non, Tiểu học Tiên Phong 1, Công viên Lý Nam Đế, Trung tâm thương mại, Chợ Cầu Gồ...',
+    type: 'Tiện ích',
+    size: '9.98ha ; với 257 lô',
     price: 'Sổ đỏ từng lô'
   },
   {
     id: 2,
     image: '/images/masterplan.webp',
-    title: 'Quy Hoạch Chi Tiết 1/500',
-    type: 'Mặt Bằng',
+    title: 'Quy hoạch chi tiết 1/500',
+    type: 'Mặt bằng',
     size: 'Toàn khu',
-    price: 'Hỗ trợ vay 70%'
+    price: ''
   },
   {
     id: 3,
     image: '/images/banner_2.webp',
-    title: 'Phối Cảnh Shophouse',
-    type: 'Sản Phẩm',
+    title: 'Phối cảnh dự án',
+    type: 'Sản phẩm',
     size: '100m² - 150m²',
-    price: 'Giá: Liên hệ'
+    price: 'Liên hệ: 0838 585 939'
   }
 ];
 
@@ -37,8 +38,8 @@ const PropertyGrid = memo(() => {
     <section id="masterplan" className="section property-grid">
       <div className="container">
         <div className="section-header text-center">
-          <span className="subtitle">Sản Phẩm Cốt Lõi</span>
-          <h2>Phân Lô & Mặt Bằng Tổng Thể</h2>
+          <span className="subtitle">Hệ thống tiện ích</span>
+          <h2>Tiện ích nội khu đẳng cấp</h2>
           <div className="accent-line"></div>
         </div>
 
@@ -60,6 +61,7 @@ const PropertyGrid = memo(() => {
               </div>
               <div className="card-content">
                 <h3>{prop.title}</h3>
+                {prop.description && <p className="card-desc">{prop.description}</p>}
                 <div className="card-info">
                   <span>Diện tích: <strong>{prop.size}</strong></span>
                   <span className="price">{prop.price}</span>
@@ -70,9 +72,6 @@ const PropertyGrid = memo(() => {
           ))}
         </div>
 
-        <div className="grid-cta text-center" style={{ marginTop: '60px' }}>
-          <a href="#" className="btn-primary">Tải Sơ Đồ Mặt Bằng Độ Nét Cao</a>
-        </div>
       </div>
 
       <ImageLightbox 

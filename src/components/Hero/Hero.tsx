@@ -67,28 +67,21 @@ const Hero = memo(() => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <span className="hero-tagline">Kiến Tạo Di Sản - Khởi Đầu Thịnh Vượng</span>
-          <h1>Vạn Xuân Heritage – Đón Đầu Vận Hội Tại "Thủ Phủ Công Nghiệp" Phổ Yên</h1>
+          <span className="hero-tagline">Kiến tạo di sản - Khởi đầu thịnh vượng</span>
+          <h1>Vạn Xuân Heritage – Đón đầu vận hội tại "Thủ phủ công nghiệp" Phổ Yên</h1>
           <p>Dự án đất nền & Shophouse đẳng cấp bậc nhất Thái Nguyên, tọa lạc tại tâm điểm vùng kinh tế trọng điểm phía Bắc.</p>
           <div className="hero-btns">
-            <a href="#contact" className="btn-primary">Nhận Bảng Giá Gốc</a>
-            <a href="#location" className="btn-outline">Vị Trí Kim Cương</a>
+            <a href="#contact" className="btn-primary">Nhận bảng giá gốc</a>
+            <a href="#location" className="btn-outline">Vị trí kim cương</a>
           </div>
         </motion.div>
       </div>
 
       <div className="hero-stats">
-        <div className="stat-item">
-          <span className="stat-num">700ha</span>
-          <span className="stat-label">KCN Yên Bình Sát Cạnh</span>
-        </div>
-        <div className="stat-item">
-          <span className="stat-num">100k+</span>
-          <span className="stat-label">Chuyên Gia & Kỹ Sư</span>
-        </div>
-        <div className="stat-item">
-          <span className="stat-num">VĐ 5</span>
-          <span className="stat-label">Vùng Thủ Đô Kết Nối</span>
+        <div className="stat-promo">
+          <span className="promo-text">Mở bán giai đoạn 1, giá chỉ từ <strong>1,6 tỷ/ lô</strong></span>
+          <span className="promo-divider">|</span>
+          <span className="promo-sub">Sổ đỏ sở hữu lâu dài - Pháp lý minh bạch</span>
         </div>
       </div>
     </section>

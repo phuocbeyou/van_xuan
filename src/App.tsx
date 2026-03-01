@@ -5,6 +5,7 @@ import Hero from './components/Hero/Hero';
 import Features from './components/Features/Features';
 import Location from './components/Location/Location';
 import PropertyGrid from './components/PropertyGrid/PropertyGrid';
+import NewsSection from './components/NewsSection/NewsSection';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
@@ -34,7 +35,7 @@ function App() {
     <HelmetProvider>
       <div className="app">
         <SEO 
-          title="Vạn Xuân Heritage Phổ Yên - Đất Nền & Shophouse Giá Gốc"
+          title="Vạn Xuân Heritage Phổ Yên - Đất nền & Shophouse giá gốc"
           description="Vạn Xuân Heritage Phổ Yên Thái Nguyên - Đất nền, Shophouse giá tốt nhất từ chủ đầu tư. Vị trí vàng thủ phủ công nghiệp Samsung, đón đầu quy hoạch Vành đai 5."
           keywords="vạn xuân heritage, phổ yên, thái nguyên, đất nền phổ yên, shophouse tam que 369, đầu tư bất động sản thái nguyên"
         />
@@ -46,6 +47,7 @@ function App() {
           <Features />
           <Location />
           <PropertyGrid />
+          <NewsSection />
           <Contact />
         </main>
 

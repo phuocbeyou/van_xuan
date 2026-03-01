@@ -72,9 +72,9 @@ const Header = memo(() => {
         {isMenuOpen && <div className="nav-overlay" onClick={() => setIsMenuOpen(false)} />}
 
         <div className="header-actions">
-          <a href="tel:0901234567" className="phone-link">
+          <a href="tel:0838585939" className="phone-link">
             <Phone size={20} />
-            <span>090 123 4567</span>
+            <span>0838585939</span>
           </a>
           <button className="mobile-toggle" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             <Menu size={28} />

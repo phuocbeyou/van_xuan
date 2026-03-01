@@ -6,22 +6,22 @@ import './Features.css';
 const featuresList = [
   {
     icon: <MapPin size={32} />,
-    title: "Cửa Ngõ Thủ Đô",
+    title: "Cửa ngõ Thủ đô",
     description: "Tiếp giáp Hà Nội, trung tâm kinh tế vùng Trung du miền núi Bắc Bộ với hạ tầng giao thông đồng bộ."
   },
   {
     icon: <Zap size={32} />,
-    title: "Nam Châm Hút FDI",
+    title: "Nam châm hút FDI",
     description: "Phổ Yên luôn nằm trong top đầu cả nước về thu hút vốn đầu tư nước ngoài (FDI)."
   },
   {
     icon: <Shield size={32} />,
-    title: "Thủ Phủ Samsung",
+    title: "Thủ phủ Samsung",
     description: "Nơi đặt nhà máy SEVT tạo động lực kinh tế khổng lồ và nhu cầu nhà ở thực từ hàng trăm nghìn chuyên gia."
   },
   {
     icon: <Heart size={32} />,
-    title: "Vùng Tiềm Năng",
+    title: "Vùng tiềm năng",
     description: "Dư địa tăng giá cực lớn khi Phổ Yên chính thức lên thành phố loại II và hạ tầng Vành đai 5 hoàn thiện."
   }
 ];
@@ -31,8 +31,8 @@ const Features = memo(() => {
     <section id="about" className="section features">
       <div className="container">
         <div className="section-header text-center">
-          <span className="subtitle">Tiềm Năng Dự Án</span>
-          <h2>Tại Sao Nên Đầu Tư Phổ Yên?</h2>
+          <span className="subtitle">Tiềm năng dự án</span>
+          <h2>Tại sao nên đầu tư Phổ Yên?</h2>
           <div className="accent-line"></div>
         </div>
 

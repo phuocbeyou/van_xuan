@@ -1,4 +1,3 @@
-import { Facebook, Instagram } from 'lucide-react';
 import Logo from '../Logo/Logo';
 import './Footer.css';
 
@@ -9,15 +8,15 @@ const Footer = () => {
         <div className="footer-top">
           <div className="footer-brand">
             {/* <img src="/images/logo_du_an.png" alt="Vạn Xuân Heritage" className="footer-logo" /> */}
-            <p>Tâm Quê 369 Group - Đơn vị phân phối bất động sản uy tín hàng đầu, chuyên dòng sản phẩm đất nền và Shophouse tại các thủ phủ công nghiệp.</p>
-            <div className="social-links">
+            <p>Tâm Quê 369 là đơn vị phân phối uy tín, chuyên dòng sản phẩm đất nền và Shophouse tại các thủ phủ công nghiệp.</p>
+            {/* <div className="social-links">
               <a href="#"><Facebook size={18} /></a>
               <a href="#"><Instagram size={18} /></a>
-            </div>
+            </div> */}
           </div>
 
           <div className="footer-links">
-            <h4>Dự Án Đang Triển Khai</h4>
+            <h4>Dự án đang triển khai</h4>
             <ul>
               <li><a href="#">Vạn Xuân Heritage Phổ Yên</a></li>
               <li><a href="#">Dự án Thái Nguyên</a></li>
@@ -27,12 +26,12 @@ const Footer = () => {
           </div>
 
           <div className="footer-links">
-            <h4>Hỗ Trợ Khách Hàng</h4>
+            <h4>Hỗ trợ khách hàng</h4>
             <ul>
-              <li><a href="#">Chính Sách Bảo Mật</a></li>
-              <li><a href="#">Quy Trình Giao Dịch</a></li>
-              <li><a href="#contact">Đăng ký Nhận Bảng Giá</a></li>
-              <li><a href="#">Tư Vấn Trực Tuyến 24/7</a></li>
+              <li><a href="#">Chính sách bảo mật</a></li>
+              <li><a href="#">Quy trình giao dịch</a></li>
+              <li><a href="#contact">Đăng ký nhận bảng giá</a></li>
+              <li><a href="#">Tư vấn trực tuyến 24/7</a></li>
             </ul>
           </div>
         </div>

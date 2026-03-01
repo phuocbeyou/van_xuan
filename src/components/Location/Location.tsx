@@ -13,29 +13,29 @@ const Location = memo(() => {
       <div className="container">
         <div className="location-wrapper">
           <div className="location-content">
-            <span className="subtitle">Vị Trí Kim Cương</span>
-            <h2>Tâm Điểm Kết Nối Hạ Tầng</h2>
+            <span className="subtitle">Vị trí kim cương</span>
+            <h2>Tâm điểm kết nối hạ tầng</h2>
             <p>Vạn Xuân Heritage nằm tại Phổ Yên - Thái Nguyên, kết nối hoàn chỉnh qua Cao tốc Hà Nội – Thái Nguyên, Quốc lộ 3 và đường Vành đai 5 vùng Thủ đô.</p>
             
             <div className="location-points">
               <div className="location-point">
                 <Truck className="point-icon" />
                 <div>
-                  <h4>Kết Nối Vùng</h4>
+                  <h4>Kết nối vùng</h4>
                   <p>Sát cạnh KCN Yên Bình (700ha), KCN Điềm Thụy (361ha), KCN Nam Phổ Yên.</p>
                 </div>
               </div>
               <div className="location-point">
                 <Plane className="point-icon" />
                 <div>
-                  <h4>Giao Thông</h4>
-                  <p>Chỉ mất 35km tới sân bay Nội Bài và 60km tới trung tâm Hà Nội.</p>
+                  <h4>Giao thông</h4>
+                  <p>Chỉ mât 5 phút tới KCN Samsung, nút giao Yên Bình và chỉ mất 20 phút lái xe về tới Hà Nội.</p>
                 </div>
               </div>
               <div className="location-point">
                 <Building2 className="point-icon" />
                 <div>
-                  <h4>Hạ Tầng</h4>
+                  <h4>Hạ tầng</h4>
                   <p>Kết nối trực tiếp Cao tốc Hà Nội - Thái Nguyên và Vành đai 5 vùng Thủ đô.</p>
                 </div>
               </div>
